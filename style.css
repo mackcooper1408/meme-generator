@@ -1,0 +1,101 @@
+/* General */
+
+html, body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(62,62,62);
+    background: -moz-linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(51,47,47,1) 68%);
+    background: -webkit-linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(51,47,47,1) 68%);
+    background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(51,47,47,1) 68%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e3e3e",endColorstr="#332f2f",GradientType=1);
+}
+
+/* Header */
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 60px;
+    background: rgb(41, 41, 41);
+}
+
+/* Form */
+
+.meme-details {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: black;
+}
+
+.meme-details > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+/*.image-url,
+.top-line,
+.bottom-line {
+    margin: 10px 3px;
+}
+
+
+.image-url > input,
+.top-line > input,
+.bottom-line > input {
+    margin-left: 50px;
+}*/
+
+
+.labels, .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+label, input {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.inputs {
+    margin-left: 100px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.submit-button {
+    margin-top: 20px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+/* Button Style */
+
+.button {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
