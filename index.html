@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Custom Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Luckiest+Guy&family=Notable&display=swap" rel="stylesheet">
+    <!--Custom Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Luckiest+Guy&family=Notable&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="style.css">
@@ -15,34 +15,56 @@
     
     <div class="wrapper">
     
-        <div class="title">
+        <div id="title">
             <head>MEME GENERATOR</head>
+            <p id="info">Enter your meme details here!</p>
         </div>
 
         <div class="meme-details">
             <form action="#" id="form">
-                <!--<div class="image-url">
-                    <label for="image_url">Image URL</label>
-                    <input type="text" id="image_url">
-                </div>
-                <div class="top-line">
-                    <label for="top_line">Top Line</label>
-                    <input type="text" id="top_line">
-                </div>
-                <div class="bottom-line">
-                    <label for="bottom_line">Bottom Line</label>
-                    <input type="text" id="bottom-line">
-                </div>-->
 
-                <div class="labels">
+                <!--<div class="labels">
                     <label for="image_url">Image URL</label>
                     <label for="top_line">Top Line</label>
                     <label for="bottom_line">Bottom Line</label>
                 </div>
                 <div class="inputs">
-                    <input type="text" id="image_url"  maxlength="100" size="150">
-                    <input type="text" id="top_line" maxlength="100" size="150">
-                    <input type="text" id="bottom_line" maxlength="100" size="150">
+                    <input type="text" id="image_url" placeholder="Give me your meme image URL!" required>
+                    <input type="text" id="top_line" maxlength="20" placeholder="(Optional) Give me the text for the top of the meme! [20 characters max]">
+                    <input type="text" id="bottom_line" maxlength="20" placeholder="(Optional) Give me the text for the bottom of the meme! [20 characters max]">
+                </div>
+
+                <div class="break"></div>
+
+                <div class="submit-button">
+                    <input type="submit" value="SUBMIT">
+                </div>-->
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="image_url">Image URL</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="image_url" placeholder="Give me your meme image URL!" required>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="col1">
+                        <label for="top_line">Top Line</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="top_line" maxlength="20" placeholder="(Optional) Give me the text for the top of the meme! [20 characters max]">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="bottom_line">Bottom Line</label>
+                    </div>
+                    <div class="col2">  
+                        <input type="text" id="bottom_line" maxlength="20" placeholder="(Optional) Give me the text for the bottom of the meme! [20 characters max]">
+                    </div>
                 </div>
 
                 <div class="break"></div>

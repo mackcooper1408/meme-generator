@@ -19,8 +19,8 @@ window.onload = function() {
 
         let memeImage = document.createElement("img");
         memeImage.setAttribute("src", image);
-
-        //newMeme.style.backgroundImage = "url("+image+")";
+        memeImage.style.maxWidth = "60vw";
+        memeImage.style.maxHeight = "60vh";
 
         let memeTop = document.createElement("div");
         memeTop.setAttribute("class", "meme_top");
@@ -37,5 +37,44 @@ window.onload = function() {
         memeContainer.appendChild(newMeme);
 
         form.reset();
+
+        let x = document.createElement("div");
+        x.setAttribute("id", "x");
+        x.innerText = "X";
+
+        newMeme.addEventListener("mouseover", function(event){
+            event.preventDefault();
+
+            newMeme.appendChild(x);
+            newMeme.style.opacity = "0.5";
+            
+        })
+        
+        newMeme.addEventListener("mouseout", function(event){
+            event.preventDefault();
+
+            newMeme.removeChild(x);
+            newMeme.style.opacity = "1";   
+        })
+
+        newMeme.addEventListener("click", function (event){
+            event.preventDefault();
+    
+            memeContainer.removeChild(newMeme);
+        })
     })
+    
+    //let newMeme = document.getElementById("new-meme");
+    
+    /*for (let i = 0; i < newMeme.length; i++) {
+        newMeme[i].addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            memeContainer.remove(newMeme);
+        })
+    }*/
+
+
+    
+
 }
