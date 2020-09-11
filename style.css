@@ -90,7 +90,7 @@ label, input {
 
 /* Button Style */
 
-.button {
+#button {
     color: #333;
     text-shadow: none; /* Prevent inheritance from `body` */
     font-size: 20px;
@@ -98,4 +98,47 @@ label, input {
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px 15px;
+}
+
+/* New Memes */
+
+#meme-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.new-meme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.meme_top,
+.meme_bot {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: -2px 2px 5px black;
+    font-size: 5em;
+}
+
+.meme_top {
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    /*left: 50%;*/
+}
+
+.meme_bot {
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    /*left: 50%;*/
 }
